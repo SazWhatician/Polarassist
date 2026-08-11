@@ -56,9 +56,11 @@ agent.panel.show()
 
 ---
 
-## 📖 Deep Study Guide
+## 📖 Deep Study Guide & Study Map
 
-For an in-depth code walkthrough with direct links to every module, function, and interface, see [STUDY_GUIDE.md](file:///c:/Users/saswa/Desktop/Page-Agent/PolarAssist/STUDY_GUIDE.md).
+- **[STUDY_MAP.md](file:///c:/Users/saswa/Desktop/Page-Agent/PolarAssist/STUDY_MAP.md)**: A structured 6-phase learning roadmap with daily targets and hands-on exercises.
+- **[STUDY_GUIDE.md](file:///c:/Users/saswa/Desktop/Page-Agent/PolarAssist/STUDY_GUIDE.md)**: An in-depth code walkthrough with direct links to every module, function, and interface.
+
 
 ---
 
