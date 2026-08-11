@@ -1,0 +1,60 @@
+{
+    "name": "@polar-assist/llms",
+    "version": "1.12.2",
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "exports": {
+        ".": {
+            "types": "./src/index.ts",
+            "default": "./src/index.ts"
+        }
+    },
+    "publishConfig": {
+        "main": "./dist/lib/polar-assist-llms.js",
+        "module": "./dist/lib/polar-assist-llms.js",
+        "types": "./dist/lib/index.d.ts",
+        "exports": {
+            ".": {
+                "types": "./dist/lib/index.d.ts",
+                "import": "./dist/lib/polar-assist-llms.js",
+                "default": "./dist/lib/polar-assist-llms.js"
+            }
+        }
+    },
+    "files": [
+        "dist/"
+    ],
+    "description": "LLM client with reflection-before-action mental model for PolarAssist",
+    "keywords": [
+        "polar-assist",
+        "llm",
+        "openai",
+        "tool-calling",
+        "agent"
+    ],
+    "author": "Simon<gaomeng1900>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PolarAssist/PolarAssist.git",
+        "directory": "packages/llms"
+    },
+    "homepage": "https://polarassist.github.io/",
+    "scripts": {
+        "build": "vite build",
+        "test": "vitest run --project llms",
+        "test:live": "vitest run --project llms:live",
+        "prepublishOnly": "node ../../scripts/pre-publish.js",
+        "postpublish": "node ../../scripts/post-publish.js"
+    },
+    "dependencies": {
+        "chalk": "^6.0.0"
+    },
+    "peerDependencies": {
+        "zod": "^3.25.0 || ^4.0.0"
+    },
+    "devDependencies": {
+        "zod": "^4.4.3"
+    }
+}

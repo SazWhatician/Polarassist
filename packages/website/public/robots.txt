@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://polarassist.github.io/sitemap.xml

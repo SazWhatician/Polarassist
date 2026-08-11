@@ -1,0 +1,48 @@
+{
+    "name": "@polar-assist/ui",
+    "version": "1.12.2",
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "exports": {
+        ".": {
+            "types": "./src/index.ts",
+            "default": "./src/index.ts"
+        }
+    },
+    "publishConfig": {
+        "main": "./dist/lib/polar-assist-ui.js",
+        "module": "./dist/lib/polar-assist-ui.js",
+        "types": "./dist/lib/index.d.ts",
+        "exports": {
+            ".": {
+                "types": "./dist/lib/index.d.ts",
+                "import": "./dist/lib/polar-assist-ui.js",
+                "default": "./dist/lib/polar-assist-ui.js"
+            }
+        }
+    },
+    "files": [
+        "dist/"
+    ],
+    "description": "UI components for PolarAssist - Panel and i18n",
+    "keywords": [
+        "polar-assist",
+        "ui",
+        "panel",
+        "i18n"
+    ],
+    "author": "Simon<gaomeng1900>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PolarAssist/PolarAssist.git",
+        "directory": "packages/ui"
+    },
+    "homepage": "https://polarassist.github.io/",
+    "scripts": {
+        "build": "vite build",
+        "prepublishOnly": "node ../../scripts/pre-publish.js",
+        "postpublish": "node ../../scripts/post-publish.js"
+    }
+}

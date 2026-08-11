@@ -1,0 +1,35 @@
+{
+    "name": "@polar-assist/mcp",
+    "private": false,
+    "version": "1.12.2",
+    "type": "module",
+    "bin": {
+        "polar-assist-mcp": "src/index.js"
+    },
+    "files": [
+        "src/"
+    ],
+    "description": "MCP server for controlling the browser via Page Agent extension",
+    "keywords": [
+        "polar-assist",
+        "mcp",
+        "browser-automation",
+        "chrome-extension"
+    ],
+    "author": "Simon<gaomeng1900>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PolarAssist/PolarAssist.git",
+        "directory": "packages/mcp"
+    },
+    "homepage": "https://polarassist.github.io/",
+    "engines": {
+        "node": ">=20"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.30.0",
+        "ws": "^8.21.1",
+        "zod": "^4.4.3"
+    }
+}
